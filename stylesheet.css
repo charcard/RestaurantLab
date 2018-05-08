@@ -1,5 +1,6 @@
 body {
     background-color: #E1D7D4;
+     font-family: 'Roboto Mono', monospace;
 } 
 
 h3, h4 {
@@ -7,11 +8,6 @@ h3, h4 {
     color: black;
     display: flex;
     justify-content: center;
-}
-
-body{
-    font-family: 'Roboto Mono', monospace;
-
 }
 
 h1, h2 {
