@@ -42,6 +42,7 @@ li {
     flex-wrap: wrap;
     height: 60px;
     width: 60px;
+    line-height: 60px;
     background-color:#EEE;
     border-radius: 50%;
     list-style: none;
@@ -51,9 +52,10 @@ li {
     margin: 10px;
     padding: 2px;
     text-align: center;
+    z-index: 2;
    }
    
-   .circles.available {
+   .available {
     display: inline-block;
     flex-wrap: wrap;
     height: 60px;
@@ -69,14 +71,14 @@ li {
     text-align: center;
    }
    
-   .circles.reserved {
+   .reserved {
     flex-wrap: wrap;
     height: 60px;
     width: 60px;
     background-color: #ADAAAA;
     border-radius: 50%;
     display: inline-block;
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
     list-style: none;
     font-family: 'Rubik', sans-serif;
     color: #CCC;
@@ -88,15 +90,17 @@ li {
 
 #form{
     background-color: white;
-    width: 50%;
     box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
     display: none;
     box-sizing: border-box;
-    width: 340px;
-    position: absolute;
+    width: 360px;
     top: 40%;
     padding: 10px;
     border-radius: 4px;
+    z-index: 3;
+    position: relative;
+    margin: auto;
+    bottom: 310px;
 }
 
 #tables {  
@@ -104,6 +108,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin: 50px;
+    z-index: 1;
 }
 
 .info {
